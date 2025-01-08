@@ -33,9 +33,17 @@
         "id": 6,
         "title": "Pizza Kika",
         "shortDescription": "Site vitrine proposant la carte des pizzas, les horaires et les coordonnées de la pizzeria.",
-        "description": "Responsable du développement d'un ERP avec système d'authentification, création de compte, gestion d'utilisateurs, gestions de flotte de véhicules, de conducteur, localisation, live tracking, statistiques... ",
+        "description": [
+            "Dans le cadre de ma formation intensive de 5 mois en développement web, j’ai décidé de créer un projet fullstack complet : un site web pour un pizzaiolo de ma région.",
+            "Frustré par son absence de site dédié et par l'utilisation de Facebook pour présenter ses pizzas, j’ai voulu lui offrir une solution moderne et fonctionnelle.",
+            "Bien que je ne lui aie finalement jamais proposé ce projet, ce site représente pour moi une belle réussite technique et personnelle.",
+            "Fonctionnalités principales :",
+            "- Gestion des pizzas : Une interface d’administration permettant de créer, lire, mettre à jour et supprimer (CRUD) des pizzas.",
+            "- Actualités dynamiques : Un système de bannières défilantes pour annoncer des promotions ou des nouveautés.",
+            "- Coordonnées et branding : Une section administrable pour modifier facilement les informations de contact, le logo et d’autres éléments liés à l’identité visuelle de l’entreprise."
+        ],
         "lienURL": "https://pizza-kika.netlify.app",
-        "image": "/ravity.png",
+        "image": "/pizza-kika.png",
         "stacks": [
             "React",
             "Ant Design",

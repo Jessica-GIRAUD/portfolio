@@ -17,17 +17,43 @@ interface IProjectProps {
     stacks: string[];
   };
 }
+
 const Project: FC<IProjectProps> = () => {
   const router = useRouter();
-  const project = projects.find(
-    (project) => project.id.toString() === router.query.id
+  const currentProjectId = router.query.id
+    ? parseInt(router.query.id as string, 10)
+    : 1;
+  const project = projects.find((project) => project.id === currentProjectId);
+
+  // Trouver l'indice du projet actuel
+  const currentIndex = projects.findIndex(
+    (project) => project.id === currentProjectId
   );
+
+  // Calculer l'ID du projet précédent et suivant
+  const previousProject =
+    projects[currentIndex - 1] || projects[projects.length - 1];
+  const nextProject = projects[currentIndex + 1] || projects[0];
 
   return (
     <Layout>
-      <section className="section">
-      <i className="fa fa-chevron-left" style={{fontSize: 20, color: 'black'}} aria-hidden="true"/>
-      <i className="fa fa-chevron-right" aria-hidden="true"></i>
+      <section className={styles.projet}>
+        {/* Flèche gauche */}
+        <Link href={`/projet/${previousProject.id}`} passHref>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className={styles.arrow + ' ' + styles.arrowLeft}
+          >
+            <path d="M15 18l-6-6 6-6" />
+          </svg>
+        </Link>
+
         {project ? (
           <div className={styles.flexCol}>
             <div className={styles.flexRow}>
@@ -37,31 +63,51 @@ const Project: FC<IProjectProps> = () => {
                   <span className="dot">.</span>
                 </h1>
                 <p className="intro">{project.shortDescription}</p>
+
+                <p className={styles.description}>
+                  {Array.isArray(project.description)
+                    ? project.description.map((desc, index) => (
+                        <p key={index}>{desc}</p>
+                      ))
+                    : project.description}
+                </p>
+                <div className={styles.stacksContainer}>
+                  {project.stacks.map((stack) => (
+                    <Stack key={stack} stack={stack} />
+                  ))}
+                </div>
+                <Link
+                  target="_blank"
+                  href={project.lienURL}
+                  className={styles.btn}
+                >
+                  Visiter le site
+                </Link>
               </div>
-              <div>
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  className={styles.image}
-                  width={300}
-                  height={250}
-                />
-              </div>
+
+              <Image
+                src={project.image}
+                alt={project.title}
+                className={styles.image}
+                width={940}
+                height={780}
+              />
             </div>
-            <div className={styles.stacksContainer}>
-              {project.stacks.map((stack) => (
-                <Stack key={stack} stack={stack} />
-              ))}
-            </div>
-          
-              <Link
-                target="_blank"
-                href={project.lienURL}
-               className={styles.btn}
+            {/* Flèche droite */}
+            <Link href={`/projet/${nextProject.id}`} passHref>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className={styles.arrow + ' ' + styles.arrowRight}
               >
-                Voir le site
-              </Link>
-           
+                <path d="M9 18l6-6-6-6" />
+              </svg>
+            </Link>
           </div>
         ) : (
           <div>No project found</div>

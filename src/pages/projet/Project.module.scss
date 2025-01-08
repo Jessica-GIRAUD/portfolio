@@ -1,37 +1,115 @@
-.flexCol {
+.projet {
   display: flex;
-  flex-direction: column;
-}
-.flexRow {
-  display: flex;
-  flex-direction: row;
+  padding: 2rem;
+
+  .flexCol {
+    display: flex;
+    flex-direction: column;
+  }
+  .flexRow {
+    padding: 0 100px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .stacksContainer {
+    display: flex;
+    gap: 5px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+  }
+
+  .image {
+    width: 60%;
+    height: 60%;
+  }
+
+  .btn {
+    width: 250px;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px 40px;
+    background-color: var(--foreground);
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: transparent 2px solid;
+    cursor: pointer;
+    &:hover {
+      border: 2px solid;
+      background-color: #fff;
+      color: var(--foreground);
+      font-weight: 600;
+    }
+  }
+
+  .description {
+    width: 90%;
+    p {
+      margin: 20px 0;
+      text-align: justify;
+    }
+  }
+  .arrow {
+    width: 5%;
+    position: absolute;
+    top: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 10;
+    transition: transform 0.3s ease;
+    transform-origin: center;
+    color: var(--tertiary-color);
+    &:hover {
+      transform: scale(1.2); /* Agrandit l'icône à 120% de sa taille initiale */
+    }
+  }
+
+  .arrowLeft {
+    left: 20px;
+    position: fixed;
+  }
+
+  .arrowRight {
+    right: 20px;
+    position: fixed;
+  }
 }
 
-.stacksContainer {
-  display: flex;
-  gap: 5px;
-}
+@media only screen and (max-width: 600px) {
+  .projet {
+    .flexRow {
+      flex-direction: column;
+      padding: 0 25px;
+      h1 {
+        font-size: 50px;
+      }
+    }
 
-.image {
-  width: 100% !important;
-  height: 100%;
-}
+    .description {
+      text-align: justify;
+    }
 
-.btn {
-  width: 200px;
-  text-align: center;
-  margin-top: 20px;
-  background: transparent;
-  border: 1px solid #333;
-  font-weight: 200;
-  font-size: 1.3em;
-  color: #333;
-  padding: 14px 32px;
-  outline: none;
-  text-decoration: none;
-  &:hover {
-    background-color: white;
-    color: var(--secondary-color);
-    border: 1px solid var(--secondary-color);
+    .stacksContainer {
+      flex: 1;
+    }
+
+    .image {
+      width: 100%;
+    }
+    .btn {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+    .arrow {
+      width: 10%;
+    }
+    .arrowLeft {
+      left: 5px;
+    }
+    .arrowRight {
+      right: 5px;
+    }
   }
 }
