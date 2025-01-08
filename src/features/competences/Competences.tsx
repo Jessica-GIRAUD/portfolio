@@ -32,32 +32,31 @@ export default function Competences() {
           <div>
             <Divider title="Part codeuse" />
             <ul style={{ padding: '40px' }}>
-              <li>Front-end development</li>
+              <li>Développement Front-end</li>
               <li>React / React Native</li>
               <li>TypeScript</li>
-              <li>Un peu de back-end</li>
-              <li>Swearing at bugs!</li>
+              <li>Un peu de back-end (J&apos;essaie, promis !)</li>
+              <li>Jurer contre les bugs, mais toujours avec un sourire ! 😅</li>
             </ul>
           </div>
           <div>
             <Divider title="Part constructive" />
 
             <ul style={{ padding: '40px' }}>
-              <li>Passion for aviation</li>
-              <li>Building sites web</li>
-              <li>Flyers and business cards</li>
-              <li>Obsessed with Legos</li>
-              <li>Solving puzzles</li>
+              <li>Archi-pro dans l&apos;assemblage de la cabine de l&apos;A350</li>
+              <li>Création de sites web</li>
+              <li>Création de flyers et cartes de visite</li>
+              <li>Résolution de puzzles (Parce que tout problème a une solution… ou presque !)</li>
             </ul>
           </div>
           <div>
             <Divider title="Autre talents" />
 
             <ul style={{ padding: '40px' }}>
-              <li>Fan de sports de glisse et de foot</li>
-              <li>Épicurienne : rhum et cuisine grasse</li>
+              <li>Fan de sports de glisse et de foot ⚽</li>
+              <li>Épicurienne : rhum et tout ce qui se mange, encore mieux si ça pique !🌶️ </li>
               <li>Joie de vivre communicative</li>
-              <li>5% seulement pour dormir !</li>
+              <li>Faire la grasse matinée</li>
             </ul>
           </div>
         </div>
