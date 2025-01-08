@@ -1,0 +1,90 @@
+[
+    {
+        "id": 1,
+        "title": "De la Graine à l'Assiette",
+        "shortDescription": "Site e-commerce destiné à la vente de produits culinaires (coulis, tartinades, pestos...).",
+        "description": "Création d’une boutique en ligne sur-mesure pour De la Graine à l’Assiette. Ce site responsive permet de découvrir un catalogue complet de produits artisanaux, de passer commande facilement via plusieurs canaux, et de valoriser l’engagement de l’exploitante envers une agriculture respectueuse de la nature. Une solution intuitive et élégante pour connecter producteurs et consommateurs.",
+        "lienURL": "https://de-la-graine-a-lassiette.fr/",
+        "image": "/graine.png",
+        "stacks": [
+            "Wordpress",
+            "Divi",
+            "WooCommerce",
+            "Hostinger",
+            "PHP"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Véronique C. Naturopathe",
+        "shortDescription": "Site vitrine destiné à la présentation de l'activité de naturopathe (soins, tarifs, parcours...).",
+        "description": "Création d’une boutique en ligne sur-mesure pour De la Graine à l’Assiette. Ce site responsive permet de découvrir un catalogue complet de produits artisanaux, de passer commande facilement via plusieurs canaux, et de valoriser l’engagement de l’exploitante envers une agriculture respectueuse de la nature. Une solution intuitive et élégante pour connecter producteurs et consommateurs.",
+        "lienURL": "https://veronique-cailhol-naturopathe.fr/",
+        "image": "/naturo.png",
+        "stacks": [
+            "Wordpress",
+            "Divi",
+            "WooCommerce",
+            "Hostinger",
+            "PHP"
+        ]
+    },
+    {
+        "id": 6,
+        "title": "Pizza Kika",
+        "shortDescription": "Site vitrine proposant la carte des pizzas, les horaires et les coordonnées de la pizzeria.",
+        "description": "Responsable du développement d'un ERP avec système d'authentification, création de compte, gestion d'utilisateurs, gestions de flotte de véhicules, de conducteur, localisation, live tracking, statistiques... ",
+        "lienURL": "https://pizza-kika.netlify.app",
+        "image": "/ravity.png",
+        "stacks": [
+            "React",
+            "Ant Design",
+            "API Rest"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "L'Harmonie par le Mouvement",
+        "shortDescription": "Site vitrine destiné à la présentation de l'Association de Gym Holistique.",
+        "description": "Création d’une boutique en ligne sur-mesure pour De la Graine à l’Assiette. Ce site responsive permet de découvrir un catalogue complet de produits artisanaux, de passer commande facilement via plusieurs canaux, et de valoriser l’engagement de l’exploitante envers une agriculture respectueuse de la nature. Une solution intuitive et élégante pour connecter producteurs et consommateurs.",
+        "lienURL": "https://www.gym-holistique-31.fr/",
+        "image": "/harmonie.png",
+        "stacks": [
+            "Wordpress",
+            "Divi",
+            "WooCommerce",
+            "Hostinger",
+            "PHP"
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Fire Eagle",
+        "shortDescription": "ERP destiné à la gestion de drônes autonomes dans la détection de feux de forêts.",
+        "description": "Responsable du développement d'un ERP avec système d'authentification, création d'utilisateurs, la gestion des drones, des entreprises et des personnes abilitées à consulter le mouvement et la détection des incendies.",
+        "lienURL": "https://fire-eagle.menaps.com/",
+        "image": "/fire-eagle.png",
+        "stacks": [
+            "Wordpress",
+            "Divi",
+            "WooCommerce",
+            "Hostinger",
+            "PHP"
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Ravity",
+        "shortDescription": "ERP destiné à la gestion de flotte de véhicules connectées.",
+        "description": "Responsable du développement d'un ERP avec système d'authentification, création de compte, gestion d'utilisateurs, gestions de flotte de véhicules, de conducteur, localisation, live tracking, statistiques... ",
+        "lienURL": "https://fleet.ravity.io/",
+        "image": "/ravity.png",
+        "stacks": [
+            "React",
+            "Bootstrap",
+            "API Rest",
+            "Google Map API",
+            "ChartsJS"
+        ]
+    }
+]

@@ -1,0 +1,143 @@
+:root {
+  --background: #f0eee8;
+  --foreground: #104657;
+  --primary-color: #a3b18a;
+  --secondary-color: #ddbea9;
+  --tertiary-color: #cce3de;
+  --text-color: #333333;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --sb-track-color: #ffffff;
+  --sb-thumb-color: var(--tertiary-color);
+  --sb-size: 6px;
+  margin: 0;
+  font-family: 'Muli', sans-serif;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size);
+  height: 6px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 3px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 3px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  padding-top: 90px;
+}
+
+section {
+  scroll-margin-top: 90px;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 6.2rem;
+  color: var(--text-color);
+  line-height: 1.1;
+  letter-spacing: -0.06em;
+  margin-bottom: 0.8rem;
+}
+
+.dot {
+  color: var(--tertiary-color);
+  margin-left: 10px;
+}
+
+.intro {
+  font-size: 24px;
+  font-size: 1.4rem;
+  color: #757575;
+  line-height: 1.3;
+  margin-bottom: 1.4rem;
+}
+
+.divider {
+  margin-top: 100px;
+  height: 2px;
+  background: #cce3de;
+  border-bottom: #ffffff solid 1px;
+  margin-bottom: 3.2rem;
+  position: relative;
+
+  h3 {
+    background: var(--background);
+    position: absolute;
+    top: -0.5rem;
+    left: 50%;
+    margin-left: -160px;
+    width: 320px;
+    text-align: center;
+    display: block;
+    color: #757575;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 0.2rem;
+    padding: 0 !important;
+  }
+}
+
+.section {
+  display: flex;
+  padding: 2rem;
+  img {
+    border-radius: 8px;
+  }
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}

@@ -1,0 +1,170 @@
+/* CARROUSSEL STARTS HERE */
+
+.container {
+  --sb-track-color: #ffffff;
+  --sb-thumb-color: var(--tertiary-color);
+  --sb-size: 6px;
+}
+
+.container::-webkit-scrollbar {
+  width: var(--sb-size);
+  height: 6px;
+}
+
+.container::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 3px;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 3px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  .container {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
+}
+
+/* CARROUSSEL ENDS HERE */
+$transition-time: 2.3s;
+
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  overflow-x: scroll;
+  gap: 50px;
+  padding: 20px;
+}
+
+.card {
+  position: relative;
+  border-radius: 8px;
+  height: 300px;
+  min-width: 250px;
+  margin: 10px 0;
+  transition: ease all $transition-time;
+  perspective: 1200px;
+  &:hover {
+    .cover {
+      transform: rotateX(0deg) rotateY(-180deg);
+      &:before {
+        transform: translateZ(30px);
+      }
+      &:after {
+        background-color: var(--tertiary-color);
+        border-radius: 8px;
+      }
+      h3 {
+        transform: translateZ(100px);
+      }
+      h4 {
+        transform: translateZ(-60px) rotatey(-180deg);
+      }
+      a {
+        transform: translateZ(-60px) rotatey(-180deg);
+      }
+    }
+  }
+
+  .cover {
+    position: absolute;
+    border-radius: 8px;
+    height: 100%;
+
+    box-shadow: rgba(165, 196, 212, 0.16) 0px 10px 36px 0px,
+      rgba(165, 196, 212, 0.06) 0px 0px 0px 1px;
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: ease all $transition-time;
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      right: 20px;
+      bottom: 20px;
+      z-index: 2;
+      transition: ease all $transition-time;
+      transform-style: preserve-3d;
+      transform: translateZ(0px);
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      z-index: 2;
+      transition: ease all 1.3s;
+    }
+    h3 {
+      font-weight: 600;
+      position: absolute;
+      width: 100%;
+      top: 75%;
+      text-align: center;
+      left: 0px;
+      color: #333;
+      transform-style: preserve-3d;
+      transition: ease all $transition-time;
+      z-index: 3;
+      font-size: 1.5em;
+      transform: translateZ(0px);
+      text-shadow: 1px 1px 1px var(--primary-color);
+    }
+  }
+  .cardBack {
+    border-radius: 8px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    transform-style: preserve-3d;
+    transition: ease all $transition-time;
+    transform: translateZ(-1px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    a {
+      transform-style: preserve-3d;
+      transition: ease transform $transition-time, ease background 0.5s;
+      transform: translateZ(-1px) rotatey(-180deg);
+      background: transparent;
+      border: 1px solid #333;
+      font-weight: 200;
+      font-size: 1.3em;
+      color: #333;
+      padding: 14px 32px;
+      outline: none;
+      text-decoration: none;
+      &:hover {
+        background-color: white;
+        color: var(--secondary-color);
+        border: 1px solid var(--secondary-color);
+      }
+    }
+    h4 {
+      transform-style: preserve-3d;
+      transition: ease transform $transition-time, ease background 0.5s;
+      transform: translateZ(-1px) rotatey(-180deg);
+      background: transparent;
+      font-weight: 300;
+      position: absolute;
+      bottom: 20px;
+      left: 0px;
+      width: 100%;
+      padding: 0 30px;
+      text-align: justify;
+      color: #333;
+      font-size: 0.9em;
+    }
+  }
+}

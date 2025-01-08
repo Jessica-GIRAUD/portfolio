@@ -1,0 +1,39 @@
+.header {
+  background: #fff;
+  padding: 1rem 5rem;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 30px rgba(7, 51, 84, 0.17);
+  opacity: 0; /* Par défaut, il est caché */
+  transition: opacity 0.6s ease-in-out; /* Transition d'opacity */
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+  }
+
+  li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    &:hover {
+      color: var(--secondary-color);
+    }
+  }
+  .active a {
+    color: var(--secondary-color);
+  }
+}
+
+.header.visible {
+  opacity: 1;
+}

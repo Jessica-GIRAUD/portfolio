@@ -1,0 +1,37 @@
+.flexCol {
+  display: flex;
+  flex-direction: column;
+}
+.flexRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.stacksContainer {
+  display: flex;
+  gap: 5px;
+}
+
+.image {
+  width: 100% !important;
+  height: 100%;
+}
+
+.btn {
+  width: 200px;
+  text-align: center;
+  margin-top: 20px;
+  background: transparent;
+  border: 1px solid #333;
+  font-weight: 200;
+  font-size: 1.3em;
+  color: #333;
+  padding: 14px 32px;
+  outline: none;
+  text-decoration: none;
+  &:hover {
+    background-color: white;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+  }
+}

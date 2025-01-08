@@ -1,0 +1,125 @@
+.about {
+  display: flex;
+  h1 {
+    color: #fff;
+    font-weight: 500;
+    font-size: 7vw;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+  }
+  p {
+    color: #fff;
+    padding: 20px;
+  }
+
+  .left {
+    background-color: #d1cbb6;
+    height: calc(100vh - 90px);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px;
+    h1 {
+      line-height: 90%;
+      margin: 20px 0;
+    }
+    button {
+      padding: 20px 40px;
+      background-color: #A79070;
+      color: #fff;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      border: transparent 1px solid;
+      cursor: pointer;
+      &:hover {
+        border: #A79070 2px solid;
+        background-color: #f0eee8;
+        color: #A79070;
+      }
+    }
+  }
+
+  .right {
+    width: 50%;
+    background-color: #D6955B;
+    display: flex;
+    flex-direction: column;
+    .doublecol {
+      display: flex;
+    }
+    .ready {
+      background-color: #A79070;
+      height: calc(100vh - 150px);
+      width: 40%;
+      p {
+        padding: 40px;
+        letter-spacing: 0.5px;
+      }
+    }
+
+    .last {
+      background-color: #A79070;
+      height: calc(100vh - 150px);
+      width: 60%;
+      overflow: hidden;
+      .contact {
+        background-color: #fff;
+        height: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+          background-color: #A79070;
+          cursor: pointer;
+          a {
+            color: #fff;
+          }
+        }
+        a {
+          color: var(--foreground);
+          text-transform: uppercase;
+          font-weight: 700;
+          font-size: 16px;
+          letter-spacing: 2px;
+          line-height: 1.8em;
+        }
+      }
+      .description {
+        background-color: #ECF8F6;
+        height: 45%;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p {
+          padding: 40px;
+          text-transform: uppercase;
+          font-size: 2.5vw;
+          color: var(--foreground);
+        }
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .reseau {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      margin: auto;
+      a {
+        height: 100%;
+        border-bottom: 1px solid transparent;
+        &:hover {
+          border-bottom: 1px solid #ffb695;
+        }
+      }
+    }
+  }
+}

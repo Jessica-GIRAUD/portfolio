@@ -1,0 +1,32 @@
+.container {
+  width: 600px;
+  height: 400px;
+  position: relative; 
+}
+.container img {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  transition: 0.5s;
+}
+
+
+.container:hover img:nth-child(1) {
+  transform: translate(80px, -80px);
+  opacity: 0.4;
+}
+.container:hover img:nth-child(2) {
+  transform: translate(60px, -60px);
+  opacity: 0.6;
+}
+.container:hover img:nth-child(3) {
+  transform: translate(40px, -40px);
+  opacity: 0.8;
+}
+.container:hover img:nth-child(4) {
+  transform: translate(20px, -20px);
+  opacity: 1;
+ 
+}
+.container img:nth-child(4) {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;}
