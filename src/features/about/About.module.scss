@@ -16,7 +16,7 @@
   }
 
   .left {
-    background-color: #d1cbb6;
+    background-color: #d0d6d8;
     height: calc(100vh - 90px);
     width: 50%;
     display: flex;
@@ -29,17 +29,18 @@
     }
     button {
       padding: 20px 40px;
-      background-color: #A79070;
+      background-color: var(--foreground);
       color: #fff;
       font-weight: 500;
       letter-spacing: 2px;
       text-transform: uppercase;
-      border: transparent 1px solid;
+      border: transparent 2px solid;
       cursor: pointer;
       &:hover {
-        border: #A79070 2px solid;
-        background-color: #f0eee8;
-        color: #A79070;
+        border: 2px solid;
+        background-color: #fff;
+        color: var(--foreground);
+        font-weight: 600;
       }
     }
   }
@@ -49,7 +50,7 @@
     display: flex;
 
     .ready {
-      background-color: #A79070;
+      background-color: var(--foreground);
       height: calc(100vh - 90px);
       width: 40%;
       p {
@@ -59,7 +60,7 @@
     }
 
     .last {
-      background-color: #A79070;
+      background-color: var(--foreground);
       height: calc(100vh - 90px);
       width: 60%;
       overflow: hidden;
@@ -70,7 +71,7 @@
         align-items: center;
         justify-content: center;
         &:hover {
-          background-color: #A79070;
+          background-color: var(--foreground);
           cursor: pointer;
           a {
             color: #fff;
@@ -103,6 +104,37 @@
         width: 100%;
       }
     }
-    
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .about {
+    flex-direction: column;
+    h1 {
+     
+      font-size: 60px;
+    }
+    .left {
+      width: 100%;
+      padding: 40px;
+    }
+    .right {
+      flex-direction: column;
+      width: 100%;
+      .ready {
+        width: 100%;
+        p {
+          padding: 30px;
+        }
+      }
+      .last {
+        width: 100%;
+        .description {
+          p {
+            font-size: 20px;
+          }
+        }
+      }
+    }
   }
 }

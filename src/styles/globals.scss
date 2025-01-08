@@ -1,8 +1,8 @@
 :root {
-  --background: #f0eee8;
+  --background: #fcfaf7;
   --foreground: #104657;
   --primary-color: #a3b18a;
-  --secondary-color: #ddbea9;
+  --secondary-color: #104657;
   --tertiary-color: #cce3de;
   --text-color: #333333;
 }
@@ -28,7 +28,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --sb-track-color: #ffffff;
-  --sb-thumb-color: var(--tertiary-color);
+  --sb-thumb-color: var(--primary-color);
   --sb-size: 6px;
   margin: 0;
   font-family: 'Muli', sans-serif;
@@ -139,5 +139,11 @@ h1 {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .divider {
+    margin-top: 40px;
   }
 }

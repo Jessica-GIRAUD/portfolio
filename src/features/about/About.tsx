@@ -1,11 +1,20 @@
 import Image from 'next/image';
 import styles from './About.module.scss';
+import { useRouter } from 'next/router';
+import { MouseEvent } from 'react';
 
 export default function About() {
+  const router = useRouter();
+
+  const handleClick = (e: MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    router.push('/#competences');
+  };
+
   return (
     <section id="about" className={styles.about}>
       <div className={styles.left}>
-        <h2> Je suis Jessica, Développeuse Front-end. </h2>
+        <h2> Développeuse Front-end.</h2>
         <h1>
           Ensemble, donnons vie <br />à vos idées
           <span className="dot">.</span>
@@ -16,48 +25,46 @@ export default function About() {
           Perfect.
         </p> */}
         <div style={{ marginTop: '20px' }}>
-          <button>En savoir plus</button>
+          <button onClick={handleClick}>En savoir plus</button>
         </div>
       </div>
 
       <div className={styles.right}>
-      
-          <div className={styles.ready}>
-            <Image
-              src="/deco.jpg"
-              alt="Jess"
-              width={300}
-              height={300}
-              className={styles.image}
-            />
-            <p>
-              Prêt à démarrer votre projet ? Je suis disponible pour en discuter
-              !
-            </p>
+        <div className={styles.ready}>
+          <Image
+            src="/Jess.jpg"
+            alt="Jess"
+            width={300}
+            height={300}
+            className={styles.image}
+          />
+          <p>
+            Prêt à démarrer votre projet ? Je suis disponible pour en discuter !
+          </p>
+        </div>
+        <div className={styles.last}>
+          <div className={styles.contact}>
+            <a href="tel:+33609974787">Contactez-moi</a>
           </div>
-          <div className={styles.last}>
-            <div className={styles.contact}>
-              <a href="tel:+33609974787">Contactez-moi</a>
-            </div>
-            <div className={styles.description}>
-              <p>
+          <div className={styles.description}>
+            <p>
               De React à Wordpress...
-               {/*  Ensemble, donnons vie <br />à vos idées */}
-                {/*  Passionnée par le développement web et riche d&apos;
+              {/*  Ensemble, donnons vie <br />à vos idées */}
+              {/*  Passionnée par le développement web et riche d&apos;
             une expertise en React, WordPress, et
             WooCommerce, je vous aide à construire des sites performants et à
             l&apos;image de votre projet. */}
-              </p>
-            </div>
-
-            <Image
-              src="/laptop-with-flowers-coffee-cup.jpg"
-              alt="laptop"
-              width={500}
-              height={200}
-            />
+            </p>
           </div>
+
+          <Image
+            src="/laptop-with-flowers-coffee-cup.jpg"
+            alt="laptop"
+            width={500}
+            height={200}
+          />
         </div>
+      </div>
       {/*   <div className={styles.reseau}>
           <Link
             href="https://www.linkedin.com/in/jessica-giraud/"

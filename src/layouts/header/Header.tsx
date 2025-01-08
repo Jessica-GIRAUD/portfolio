@@ -6,6 +6,7 @@ import { useEffect, useMemo, useState } from 'react';
 const Header = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [activeSection, setActiveSection] = useState<string | null>(null);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     // Apparition du header à l'arrivée sur la page d'accueil
@@ -55,17 +56,30 @@ const Header = () => {
     };
   }, [menuItems]);
 
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen((prev) => !prev);
+  };
+
   return (
     <header className={`${styles.header} ${isVisible ? styles.visible : ''}`}>
       <Link href="/">
         <Image alt="logo" src="/logo.svg" width={250} height={250} />
       </Link>
-      <ul>
+      <div
+        className={`${styles.burger} ${isMobileMenuOpen ? styles.open : ''}`}
+        onClick={toggleMobileMenu}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul className={`${styles.menu} ${isMobileMenuOpen ? styles.open : ''}`}>
         {menuItems.map((item, index) => {
           return (
             <li
               key={index}
               className={activeSection === item.id ? styles.active : ''}
+              onClick={() => setIsMobileMenuOpen(false)}
             >
               <Link href={item.path}>{item.name}</Link>
             </li>

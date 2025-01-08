@@ -1,15 +1,20 @@
 import Divider from '@/components/divider/Divider';
+import styles from './Competences.module.scss';
 
 export default function Competences() {
   return (
-    <section style={{ width: '100%', marginTop: '90px', padding: "40px" }} id="competences">
-      <section className="section space-evenly">
-        <div style={{ maxWidth: '40%', textAlign: 'justify' }}>
-          <h1>
+    <section
+      style={{ width: '100%', padding: '40px' }}
+      id="competences"
+      className={styles.competences}
+    >
+
+        <div  className={styles.header}>
+          <h1 >
             compétences<span className="dot">.</span>
           </h1>
-          <p className="intro">Bienvenue dans mon univers de développement.</p>
-          <p >
+          <p className={styles.intro}>Bienvenue dans mon univers de développement.</p>
+          <p>
             Je vous invite à découvrir quelques-uns de mes projets récents, où
             j&apos;ai combiné expertise technique et créativité pour répondre à
             divers besoins. De la création d&apos;applications modernes avec
@@ -21,13 +26,12 @@ export default function Competences() {
             adaptées.
           </p>
         </div>
-      </section>
 
-      <div >
+      <div>
         <div>
           <div>
             <Divider title="Part codeuse" />
-            <ul style={{padding: "40px"}}>
+            <ul style={{ padding: '40px' }}>
               <li>Front-end development</li>
               <li>React / React Native</li>
               <li>TypeScript</li>
@@ -38,7 +42,7 @@ export default function Competences() {
           <div>
             <Divider title="Part constructive" />
 
-            <ul style={{padding: "40px"}}>
+            <ul style={{ padding: '40px' }}>
               <li>Passion for aviation</li>
               <li>Building sites web</li>
               <li>Flyers and business cards</li>
@@ -49,7 +53,7 @@ export default function Competences() {
           <div>
             <Divider title="Autre talents" />
 
-            <ul style={{padding: "40px"}}>
+            <ul style={{ padding: '40px' }}>
               <li>Fan de sports de glisse et de foot</li>
               <li>Épicurienne : rhum et cuisine grasse</li>
               <li>Joie de vivre communicative</li>

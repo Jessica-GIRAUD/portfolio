@@ -6,9 +6,9 @@ import Image from 'next/image';
 
 export default function Portfolio() {
   return (
-    <section style={{ width: '100%', marginTop: "90px" }} id='portfolio'>
-      <section className="section space-evenly">
-        <div style={{ maxWidth: '40%', textAlign: 'justify' }}>
+    <section style={{ width: '100%' }} id='portfolio' className={styles.portfolio}>
+      <section className={styles.section}>
+        <div className={styles.header}>
           <h1>
             portfolio<span className="dot">.</span>
           </h1>
