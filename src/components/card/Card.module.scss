@@ -54,7 +54,7 @@ $transition-time: 2.3s;
         transform: translateZ(30px);
       }
       &:after {
-        background-color: var(--tertiary-color);
+       background-color: var(--tertiary-color);
         border-radius: 8px;
       }
       h3 {
@@ -74,8 +74,8 @@ $transition-time: 2.3s;
     border-radius: 8px;
     height: 100%;
 
-    box-shadow: rgba(165, 196, 212, 0.16) 0px 10px 36px 0px,
-      rgba(165, 196, 212, 0.06) 0px 0px 0px 1px;
+    //box-shadow: rgba(165, 196, 212, 0.16) 0px 10px 36px 0px,
+      //rgba(165, 196, 212, 0.06) 0px 0px 0px 1px;
     width: 100%;
     transform-style: preserve-3d;
     transition: ease all $transition-time;
@@ -125,7 +125,7 @@ $transition-time: 2.3s;
     position: absolute;
     height: 100%;
     width: 100%;
-    background: #fff;
+    background:#fcfaf7;
     transform-style: preserve-3d;
     transition: ease all $transition-time;
     transform: translateZ(-1px);
@@ -134,15 +134,14 @@ $transition-time: 2.3s;
     justify-content: center;
     flex-direction: column;
     a {
+      width: 200px;
       transform-style: preserve-3d;
       transition: ease transform $transition-time, ease background 0.5s;
       transform: translateZ(-1px) rotatey(-180deg);
       background: transparent;
       border: 1px solid #333;
-      font-weight: 200;
-      font-size: 1.3em;
       color: #333;
-      padding: 14px 32px;
+      padding: 15px;
       outline: none;
       text-decoration: none;
       &:hover {

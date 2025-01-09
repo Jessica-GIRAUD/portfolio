@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import styles from './Card.module.scss';
-import Link from 'next/link';
+import Button from '../button/Button';
 
 interface ICardProps {
   title: string;
@@ -19,7 +19,7 @@ const Card: FC<ICardProps> = (props) => {
         <h3>{title}</h3>
 
         <div className={styles.cardBack}>
-          <Link href={`/projet/${id}`}>Voir en détail</Link>
+          <Button title='Voir en détail' lienURL={`/projet/${id}`}/>
           <h4>{shortDescription}</h4>
         </div>
       </div>

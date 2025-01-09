@@ -1,7 +1,31 @@
-.header {
-  width: 50%;
-  text-align: justify;
-}
+.competences{
+
+  .section {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .header {
+    width: 40%;
+    text-align: justify;
+  }
+
+  .container {
+    width: 40%;
+    position: relative;
+    .picture {
+      border-radius: 7px;
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+  }
+  .container img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    transition: 0.5s;
+  }
+
 
 .intro {
   font-size: 24px;
@@ -9,6 +33,11 @@
   color: #757575;
   line-height: 1.3;
   margin-bottom: 1.4rem;
+}
+}
+
+.canva {
+  width: 30%;
 }
 
 @media only screen and (max-width: 600px) {

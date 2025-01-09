@@ -7,11 +7,13 @@ import { useRouter } from 'next/router';
 
 import projects from './projets.json';
 import Layout from '@/layouts/layout/Layout';
+import Button from '@/components/button/Button';
 
 interface IProjectProps {
   project: {
     title: string;
     shortDescription: string;
+    description: string[] | string;
     lienURL: string;
     image: string;
     stacks: string[];
@@ -64,25 +66,21 @@ const Project: FC<IProjectProps> = () => {
                 </h1>
                 <p className="intro">{project.shortDescription}</p>
 
-                <p className={styles.description}>
-                  {Array.isArray(project.description)
-                    ? project.description.map((desc, index) => (
-                        <p key={index}>{desc}</p>
-                      ))
-                    : project.description}
-                </p>
+                {Array.isArray(project.description) ? (
+                  project.description.map((desc, index) => (
+                    <p className={styles.description} key={index}>
+                      {desc}
+                    </p>
+                  ))
+                ) : (
+                  <p className={styles.description}>project.description </p>
+                )}
                 <div className={styles.stacksContainer}>
                   {project.stacks.map((stack) => (
                     <Stack key={stack} stack={stack} />
                   ))}
                 </div>
-                <Link
-                  target="_blank"
-                  href={project.lienURL}
-                  className={styles.btn}
-                >
-                  Visiter le site
-                </Link>
+                <Button lienURL={project.lienURL} title="Visite le site" />
               </div>
 
               <Image

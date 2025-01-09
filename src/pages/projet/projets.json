@@ -2,31 +2,46 @@
     {
         "id": 1,
         "title": "De la Graine à l'Assiette",
-        "shortDescription": "Site e-commerce destiné à la vente de produits culinaires (coulis, tartinades, pestos...).",
-        "description": "Création d’une boutique en ligne sur-mesure pour De la Graine à l’Assiette. Ce site responsive permet de découvrir un catalogue complet de produits artisanaux, de passer commande facilement via plusieurs canaux, et de valoriser l’engagement de l’exploitante envers une agriculture respectueuse de la nature. Une solution intuitive et élégante pour connecter producteurs et consommateurs.",
+        "shortDescription": "Site e-commerce dédié aux préparations culinaires artisanales issues du potager et du verger.",
+        "description": [
+            "Ce site e-commerce présente les préparations culinaires artisanales réalisées à partir des légumes du potager et des fruits du verger de l'exploitation agricole de ma cliente.",
+            "Elle gère toutes les étapes de la production : semis, plantation, récolte, transformation, stérilisation, pasteurisation, mise sous vide, étiquetage et vente.",
+            "Les produits, entièrement faits maison, sont proposés via plusieurs canaux : marchés, vente directe et désormais en ligne grâce à ce site.",
+            "Le site, réalisé sous WordPress avec WooCommerce, offre :",
+            "- Un système de commande en ligne avec paiement par RIB, chèque ou espèce à la livraison.",
+            "- Une interface d'administration accessible, accompagnée d'une formation pour utiliser WooCommerce.",
+            "- Un système de mailing professionnel intégré.",
+            "- Un design frais et accueillant qui reflète l'authenticité et l'engagement de ma cliente pour une agriculture respectueuse."
+        ],
         "lienURL": "https://de-la-graine-a-lassiette.fr/",
         "image": "/graine.png",
         "stacks": [
-            "Wordpress",
+            "WordPress",
             "Divi",
             "WooCommerce",
-            "Hostinger",
-            "PHP"
+            "PHP",
+            "Hostinger"
         ]
     },
     {
         "id": 2,
         "title": "Véronique C. Naturopathe",
-        "shortDescription": "Site vitrine destiné à la présentation de l'activité de naturopathe (soins, tarifs, parcours...).",
-        "description": "Création d’une boutique en ligne sur-mesure pour De la Graine à l’Assiette. Ce site responsive permet de découvrir un catalogue complet de produits artisanaux, de passer commande facilement via plusieurs canaux, et de valoriser l’engagement de l’exploitante envers une agriculture respectueuse de la nature. Une solution intuitive et élégante pour connecter producteurs et consommateurs.",
+        "shortDescription": "Site vitrine présentant l'activité de naturopathe et la pratique de la gym holistique.",
+        "description": [
+            "Ce site vitrine a été créé pour Véronique C., qui s'est reconvertie en naturopathe après une longue formation suite à la pandémie de COVID-19.",
+            "Le site, réalisé sous WordPress avec le thème Divi, propose :",
+            "- Ses coordonnées complètes pour permettre aux visiteurs de la contacter facilement.",
+            "- Des informations détaillées sur son parcours et sa pratique de la naturopathie.",
+            "- Une présentation de la gym holistique qu'elle enseigne, avec des explications sur ses bienfaits.",
+            "- Une page dédiée à ses tarifs et un formulaire de contact intégré.",
+            "L'hébergement est assuré par Hostinger. Le design du site reflète son professionnalisme et son engagement dans le bien-être et la santé naturelle."
+        ],
         "lienURL": "https://veronique-cailhol-naturopathe.fr/",
         "image": "/naturo.png",
         "stacks": [
-            "Wordpress",
+            "WordPress",
             "Divi",
-            "WooCommerce",
-            "Hostinger",
-            "PHP"
+            "Hostinger"
         ]
     },
     {
@@ -34,8 +49,8 @@
         "title": "Pizza Kika",
         "shortDescription": "Site vitrine proposant la carte des pizzas, les horaires et les coordonnées de la pizzeria.",
         "description": [
-            "Dans le cadre de ma formation intensive de 5 mois en développement web, j’ai décidé de créer un projet fullstack complet : un site web pour un pizzaiolo de ma région.",
-            "Frustré par son absence de site dédié et par l'utilisation de Facebook pour présenter ses pizzas, j’ai voulu lui offrir une solution moderne et fonctionnelle.",
+            "A l'issue ma formation intensive en développement web, j’ai décidé de créer un projet fullstack complet : un site web pour mon pizzaiolo préféré, dans ma région.",
+            "Frustrée par son absence de site dédié et par l'utilisation de Facebook pour présenter ses pizzas, j’ai voulu lui offrir une solution moderne et fonctionnelle.",
             "Bien que je ne lui aie finalement jamais proposé ce projet, ce site représente pour moi une belle réussite technique et personnelle.",
             "Fonctionnalités principales :",
             "- Gestion des pizzas : Une interface d’administration permettant de créer, lire, mettre à jour et supprimer (CRUD) des pizzas.",
@@ -47,52 +62,80 @@
         "stacks": [
             "React",
             "Ant Design",
-            "API Rest"
+            "Express",
+            "NodeJS",
+            "MySQL",
+            "API Rest",
+            "GSAP",
+            "Netlify"
         ]
     },
     {
         "id": 3,
         "title": "L'Harmonie par le Mouvement",
         "shortDescription": "Site vitrine destiné à la présentation de l'Association de Gym Holistique.",
-        "description": "Création d’une boutique en ligne sur-mesure pour De la Graine à l’Assiette. Ce site responsive permet de découvrir un catalogue complet de produits artisanaux, de passer commande facilement via plusieurs canaux, et de valoriser l’engagement de l’exploitante envers une agriculture respectueuse de la nature. Une solution intuitive et élégante pour connecter producteurs et consommateurs.",
+        "description": [
+            "Ce site vitrine présente l'association de Gym Holistique, ses horaires d'activités, ses tarifs, et une section d'actualités comprenant des stages, ateliers, événements, articles et témoignages.",
+            "Il propose également des rubriques 'À propos', 'Liens utiles', ainsi que des explications sur les objectifs et les bienfaits de la gym holistique (pour qui et pourquoi).",
+            "Une section dédiée permet de consulter les horaires et tarifs, et un formulaire de contact facilite les échanges avec les visiteurs."
+        ],
         "lienURL": "https://www.gym-holistique-31.fr/",
         "image": "/harmonie.png",
         "stacks": [
             "Wordpress",
             "Divi",
-            "WooCommerce",
-            "Hostinger",
-            "PHP"
+            "Hostinger"
         ]
     },
     {
         "id": 4,
         "title": "Fire Eagle",
-        "shortDescription": "ERP destiné à la gestion de drônes autonomes dans la détection de feux de forêts.",
-        "description": "Responsable du développement d'un ERP avec système d'authentification, création d'utilisateurs, la gestion des drones, des entreprises et des personnes abilitées à consulter le mouvement et la détection des incendies.",
+        "shortDescription": "ERP destiné à la gestion de drones autonomes pour la détection de feux de forêts.",
+        "description": [
+            "Fire Eagle est un ERP innovant pour la gestion de drones autonomes spécialisés dans la détection des feux de forêts.",
+            "Le système inclut une authentification sécurisée, un tableau de bord avec des KPI liés aux détections de feux, et la possibilité d'ajouter et de gérer des entreprises et des utilisateurs via des fonctionnalités CRUD.",
+            "Les fonctionnalités principales incluent également :",
+            "- Visualisation en direct des flux vidéo des drones.",
+            "- Gestion et consultation de l'historique des détections.",
+            "- Réception de notifications en temps réel en cas d'incendie.",
+            "- Une interface intuitive permettant de superviser et d'optimiser l'ensemble des opérations liées à la prévention des feux de forêts."
+        ],
         "lienURL": "https://fire-eagle.menaps.com/",
         "image": "/fire-eagle.png",
         "stacks": [
-            "Wordpress",
-            "Divi",
-            "WooCommerce",
-            "Hostinger",
-            "PHP"
+            "React",
+            "RematchJS",
+            "Material UI",
+            "i18next",
+            "Axios"
         ]
     },
     {
         "id": 5,
         "title": "Ravity",
-        "shortDescription": "ERP destiné à la gestion de flotte de véhicules connectées.",
-        "description": "Responsable du développement d'un ERP avec système d'authentification, création de compte, gestion d'utilisateurs, gestions de flotte de véhicules, de conducteur, localisation, live tracking, statistiques... ",
+        "shortDescription": "ERP destiné à la gestion de flotte de véhicules connectés.",
+        "description": [
+            "Ravity est un ERP complet permettant de gérer les flottes de véhicules connectés avec des fonctionnalités avancées :",
+            "- Suivi des flottes en temps réel grâce à l'intégration de Google Maps.",
+            "- Notifications personnalisées pour des événements tels que des excès de vitesse, un faible niveau de carburant, des pannes ou des collisions.",
+            "- Suivi des destinations des conducteurs et gestion des itinéraires.",
+            "- Gestion avancée des utilisateurs avec des rôles différenciés (admin, manager, utilisateur).",
+            "- CRUD pour les véhicules, les conducteurs et les utilisateurs.",
+            "- Possibilité de configurer les préférences linguistiques pour une interface multilingue.",
+            "- Des statistiques et rapports détaillés pour optimiser les opérations de flotte.",
+            "- Génération de rapports et exportation des données (CSV, PDF)."
+        ],
         "lienURL": "https://fleet.ravity.io/",
         "image": "/ravity.png",
         "stacks": [
             "React",
-            "Bootstrap",
-            "API Rest",
-            "Google Map API",
-            "ChartsJS"
+            "RematchJS",
+            "Google Maps API",
+            "ApexCharts",
+            "React Query",
+            "i18next",
+            "Formik",
+            "Material UI"
         ]
     }
 ]

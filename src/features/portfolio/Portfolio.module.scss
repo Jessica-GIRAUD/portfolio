@@ -16,8 +16,9 @@
   .container img {
     position: absolute;
     left: 0;
-    width: 100%;
+    width: 80%;
     transition: 0.5s;
+    border-radius: 7px;
   }
 
   .container:hover img:nth-child(1) {

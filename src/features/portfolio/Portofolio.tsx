@@ -27,31 +27,31 @@ export default function Portfolio() {
         </div>
         <div className={styles.container}>
           <Image
-            src="/laptop-with-flowers-coffee-cup.jpg"
-            alt="laptop-flower"
+            src="/setup.png"
+            alt="setup"
             className={styles.picture}
-            width={600}
+            width={500}
             height={350}
           />
           <Image
-            src="/laptop-with-flowers-coffee-cup.jpg"
-            alt="laptop-flower"
+             src="/setup.png"
+            alt="setup"
             className={styles.picture}
-            width={600}
+            width={500}
             height={350}
           />
           <Image
-            src="/laptop-with-flowers-coffee-cup.jpg"
-            alt="laptop-flower"
+             src="/setup.png"
+            alt="setup"
             className={styles.picture}
-            width={600}
+            width={500}
             height={350}
           />
           <Image
-            src="/laptop-with-flowers-coffee-cup.jpg"
-            alt="laptop-flower"
+             src="/setup.png"
+            alt="setup"
             className={styles.picture}
-            width={600}
+            width={500}
             height={350}
           />
         </div>

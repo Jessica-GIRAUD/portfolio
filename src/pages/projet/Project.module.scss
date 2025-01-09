@@ -20,28 +20,8 @@
   }
 
   .image {
-    width: 60%;
-    height: 60%;
-  }
-
-  .btn {
-    width: 250px;
-    text-align: center;
-    margin-top: 20px;
-    padding: 20px 40px;
-    background-color: var(--foreground);
-    color: #fff;
-    font-weight: 500;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    border: transparent 2px solid;
-    cursor: pointer;
-    &:hover {
-      border: 2px solid;
-      background-color: #fff;
-      color: var(--foreground);
-      font-weight: 600;
-    }
+    width: 50%;
+    height: fit-content;
   }
 
   .description {
