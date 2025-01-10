@@ -20,7 +20,7 @@ export default function Hero() {
           Ensemble, donnons vie <br />à vos idées
           <span className="dot">.</span>
         </h1>
- 
+
         <div style={{ marginTop: '20px' }}>
           <Button title="En savoir plus" handleClick={handleClick} />
         </div>
@@ -44,18 +44,16 @@ export default function Hero() {
             <a href="tel:+33609974787">Contactez-moi</a>
           </div>
           <div className={styles.description}>
-            <p>
-              De React à Wordpress...
-             
-            </p>
+            <p>De React à Wordpress...</p>
           </div>
 
-          <Image
+          <div className={styles.laptop} />
+         {/*  <Image
             src="/laptop-with-flowers-coffee-cup.jpg"
             alt="laptop"
             width={500}
             height={200}
-          />
+          /> */}
         </div>
       </div>
       {/*   <div className={styles.reseau}>

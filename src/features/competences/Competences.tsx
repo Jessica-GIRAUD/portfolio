@@ -5,7 +5,6 @@ import Image from 'next/image';
 export default function Competences() {
   return (
     <section
-      style={{ width: '100%', padding: '40px' }}
       id="competences"
       className={styles.competences}
     >
@@ -14,7 +13,7 @@ export default function Competences() {
           <h1>
             compétences<span className="dot">.</span>
           </h1>
-          <p className={styles.intro}>
+          <p className="intro">
             Construire des solutions, une ligne de code à la fois.
           </p>
           <p>

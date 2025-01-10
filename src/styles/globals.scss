@@ -28,7 +28,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --sb-track-color: #ffffff;
-  --sb-thumb-color: var(--primary-color);
+  --sb-thumb-color: var(--secondary-color);
   --sb-size: 6px;
   margin: 0;
   font-family: 'Muli', sans-serif;
@@ -92,7 +92,6 @@ h1 {
 }
 
 .intro {
-  font-size: 24px;
   font-size: 1.4rem;
   color: #757575;
   line-height: 1.3;
@@ -143,7 +142,7 @@ h1 {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1040px) {
   .divider {
     margin-top: 40px;
   }

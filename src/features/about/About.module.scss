@@ -48,8 +48,8 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .competences {
+@media only screen and (max-width: 1040px) {
+  .about {
     .header {
       width: 100%;
       h1 {
@@ -58,6 +58,19 @@
     }
     ul {
       padding-top: 0;
+    }
+  }
+
+  .flex {
+    flex-direction: column-reverse;
+    .right { 
+      width: 100%;
+      padding: 2rem;
+    }
+    .left {
+      width: 100%;
+      justify-content: center;
+      display: flex;
     }
   }
 }

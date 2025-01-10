@@ -100,9 +100,11 @@
           color: var(--foreground);
         }
       }
-      img {
-        width: 100%;
-        height: auto;
+      .laptop {
+        background-image: url('/laptop-with-flowers-coffee-cup.jpg');
+        height: 30%;
+        background-size: cover;
+        background-position: center;
       }
     }
   }
@@ -112,7 +114,6 @@
   .about {
     flex-direction: column;
     h1 {
-     
       font-size: 60px;
     }
     .left {

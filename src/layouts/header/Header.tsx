@@ -61,7 +61,7 @@ const Header = () => {
   };
 
   return (
-    <header className={`${styles.header} ${isVisible ? styles.visible : ''}`}>
+    <nav className={`${styles.header} ${isVisible ? styles.visible : ''}`}>
       <Link href="/">
         <Image alt="logo" src="/logo.svg" width={250} height={250} />
       </Link>
@@ -86,7 +86,7 @@ const Header = () => {
           );
         })}
       </ul>
-    </header>
+    </nav>
   );
 };
 

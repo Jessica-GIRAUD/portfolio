@@ -16,7 +16,7 @@
   .container img {
     position: absolute;
     left: 0;
-    width: 80%;
+    width: 100%;
     transition: 0.5s;
     border-radius: 7px;
   }
@@ -43,7 +43,7 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1040px) {
   .portfolio {
     .section {
       flex-direction: column;
@@ -52,8 +52,13 @@
       width: 100%;
     }
 
-    .container img {
-      position: relative;
+    .container {
+      display: flex;
+      justify-content: center;
+      img {
+        position: relative;
+        width: 100%;
+      }
     }
 
     .container img:nth-child(1),
@@ -66,6 +71,9 @@
       border-radius: 7px;
       margin-top: 30px;
       height: auto;
+      &:hover {
+        transform: none;
+      }
     }
 
     .header {

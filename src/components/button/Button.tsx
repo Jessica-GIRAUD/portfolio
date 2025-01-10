@@ -13,7 +13,13 @@ const Button: FC<IButtonPropos> = (props) => {
       {props.title}
     </Link>
   ) : (
-    <button onClick={props.handleClick}>En savoir plus</button>
+    <button
+      className={styles.btn}
+      onClick={props.handleClick ? props.handleClick : undefined}
+      type={props.handleClick ? 'button' : 'submit'}
+    >
+       {props.title}
+    </button>
   );
 };
 
