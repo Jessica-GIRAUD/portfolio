@@ -13,15 +13,16 @@ export default function Hero() {
   };
 
   return (
-    <section className={styles.about}>
+    <section className={styles.hero}>
       <div className={styles.left}>
         <h2>Développeuse Front-end</h2>
         <h1>
-          Prête à coder vos idées<span className="dot">.</span>
+          Prête à coder vos idées
+          <span className={`dot ${styles.dot}`}>
+            .
+          </span>
         </h1>
-        <p>
-        Avec du <strong>React</strong> (mais pas que !), de la créativité, et une petite dose de café, je transforme vos projets en expériences interactives qui dépotent. 🌟
-        </p>
+
         <div style={{ marginTop: '20px' }}>
           <Button title="Découvrez mes projets" handleClick={handleClick} />
         </div>
@@ -39,6 +40,10 @@ export default function Hero() {
           <p>
             On se lance ? Ensemble, construisons des solutions qui vous
             ressemblent. 🚀
+        <br /><br />
+            Avec du <strong>React</strong> (mais pas que !), de la créativité,
+            et une petite dose de café, je transforme vos projets en expériences
+            interactives qui dépotent. 🌟
           </p>
         </div>
         <div className={styles.last}>

@@ -7,11 +7,11 @@ export default function About() {
     <section id="about" className={styles.about}>
       <div className={styles.left}>
         <h1>
-          à propos de moi<span className="dot">.</span>
+          À propos de moi<span className="dot">.</span>
         </h1>
         <p className={styles.intro}>Bienvenue dans mon univers !</p>
 
-        <Image src="/html2.png" alt="html" className={styles.image} fill />
+        <Image src="/html2.png" alt="site internet react css" className={styles.image} fill />
       </div>
       <div className={styles.right}>
         <h2 className={styles.question}>Qui suis-je ?</h2>

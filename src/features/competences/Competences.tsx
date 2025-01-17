@@ -1,13 +1,10 @@
 import Divider from '@/components/divider/Divider';
 import styles from './Competences.module.scss';
-import Image from 'next/image';
+// import Charts from './Charts';
 
 export default function Competences() {
   return (
-    <section
-      id="competences"
-      className={styles.competences}
-    >
+    <section id="competences" className={styles.competences}>
       <section className={styles.section}>
         <div className={styles.header}>
           <h1>
@@ -34,17 +31,10 @@ export default function Competences() {
             levier puissant pour vos ambitions digitales.
           </p>
         </div>
-        <div className={styles.container}>
-          <Image
-            src="/knowledge.png"
-            alt="knowledge"
-            className={styles.picture}
-            width={500}
-            height={350}
-          />
-        </div>
+       
       </section>
 
+      {/*   <Charts /> */}
       <div>
         <Divider title="Part codeuse" />
 

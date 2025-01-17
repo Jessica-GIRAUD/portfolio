@@ -79,12 +79,20 @@ a {
 }
 
 h1 {
-  font-size: 5vw;
+  font-size: 7vw;
   color: var(--text-color);
   line-height: 1.1;
   letter-spacing: -0.06em;
   margin-bottom: 0.8rem;
+  font-weight: 500;
 }
+
+@media only screen and (max-width: 1040px) {
+  h1 {
+    font-size: 50px;
+  }
+}
+
 
 .dot {
   color: var(--tertiary-color);

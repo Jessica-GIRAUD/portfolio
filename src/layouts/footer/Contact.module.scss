@@ -84,11 +84,14 @@
   .contact {
     .section {
       padding: 2rem;
-      h1 {
-        font-size: 50px;
-      }
+
       .header {
         width: 100%;
+      }
+      .form {
+        .formGroup {
+          width: 100%;
+        }
       }
     }
   }
