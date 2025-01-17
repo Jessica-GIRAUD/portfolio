@@ -9,20 +9,21 @@ export default function Hero() {
 
   const handleClick = (e: MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
-    router.push('/#competences');
+    router.push('/#portfolio');
   };
 
   return (
     <section className={styles.about}>
       <div className={styles.left}>
-        <h2> Développeuse Front-end.</h2>
+        <h2>Développeuse Front-end</h2>
         <h1>
-          Ensemble, donnons vie <br />à vos idées
-          <span className="dot">.</span>
+          Prête à coder vos idées<span className="dot">.</span>
         </h1>
-
+        <p>
+        Avec du <strong>React</strong> (mais pas que !), de la créativité, et une petite dose de café, je transforme vos projets en expériences interactives qui dépotent. 🌟
+        </p>
         <div style={{ marginTop: '20px' }}>
-          <Button title="En savoir plus" handleClick={handleClick} />
+          <Button title="Découvrez mes projets" handleClick={handleClick} />
         </div>
       </div>
 
@@ -30,47 +31,29 @@ export default function Hero() {
         <div className={styles.ready}>
           <Image
             src="/Jess.jpg"
-            alt="Jess"
+            alt="Jessica Lemarchand, développeur développeuse front end react"
             width={300}
             height={300}
             className={styles.image}
           />
           <p>
-            Prêt à démarrer votre projet ? Je suis disponible pour en discuter !
+            On se lance ? Ensemble, construisons des solutions qui vous
+            ressemblent. 🚀
           </p>
         </div>
         <div className={styles.last}>
           <div className={styles.contact}>
-            <a href="tel:+33609974787">Contactez-moi</a>
+            <a href="tel:+33609974787">Me contacter</a>
           </div>
           <div className={styles.description}>
-            <p>De React à Wordpress...</p>
+            <p>
+              Sites vitrines, e-commerce, ERP : <br />
+              du sur-mesure pensé pour vous.
+            </p>
           </div>
-
           <div className={styles.laptop} />
-         {/*  <Image
-            src="/laptop-with-flowers-coffee-cup.jpg"
-            alt="laptop"
-            width={500}
-            height={200}
-          /> */}
         </div>
       </div>
-      {/*   <div className={styles.reseau}>
-          <Link
-            href="https://www.linkedin.com/in/jessica-giraud/"
-            target="_blank"
-          >
-            <Image alt="logo" src="/linkedin.svg" width={30} height={30} />
-          </Link>
-          <Link
-            href="https://www.malt.fr/profile/jessicagiraud"
-            target="_blank"
-          >
-            <Image alt="logo" src="/malt.svg" width={30} height={30} />
-          </Link>
-        </div>
-      </div> */}
     </section>
   );
 }
