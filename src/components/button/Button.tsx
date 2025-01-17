@@ -6,10 +6,16 @@ interface IButtonPropos {
   lienURL?: string;
   title: string;
   handleClick?: (e: MouseEvent<HTMLButtonElement>) => void;
+  download?: string;
 }
 const Button: FC<IButtonPropos> = (props) => {
   return props.lienURL ? (
-    <Link target="_blank" href={props.lienURL} className={styles.btn}>
+    <Link
+      target="_blank"
+      href={props.lienURL}
+      download={props.download}
+      className={styles.btn}
+    >
       {props.title}
     </Link>
   ) : (
@@ -18,7 +24,7 @@ const Button: FC<IButtonPropos> = (props) => {
       onClick={props.handleClick ? props.handleClick : undefined}
       type={props.handleClick ? 'button' : 'submit'}
     >
-       {props.title}
+      {props.title}
     </button>
   );
 };

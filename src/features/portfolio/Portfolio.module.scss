@@ -15,8 +15,9 @@
   }
   .container img {
     position: absolute;
+    width: 80% !important;
     left: 0;
-    width: 100%;
+   
     transition: 0.5s;
     border-radius: 7px;
   }

@@ -6,7 +6,10 @@ import Image from 'next/image';
 
 export default function Portfolio() {
   return (
-    <section style={{ width: '100%' }} id='portfolio' className={styles.portfolio}>
+    <section
+      id="portfolio"
+      className={styles.portfolio}
+    >
       <section className={styles.section}>
         <div className={styles.header}>
           <h1>
@@ -30,29 +33,25 @@ export default function Portfolio() {
             src="/setup.png"
             alt="setup"
             className={styles.picture}
-            width={500}
-            height={350}
+            fill
           />
           <Image
              src="/setup.png"
             alt="setup"
             className={styles.picture}
-            width={500}
-            height={350}
+            fill
           />
           <Image
              src="/setup.png"
             alt="setup"
             className={styles.picture}
-            width={500}
-            height={350}
+            fill
           />
           <Image
              src="/setup.png"
             alt="setup"
             className={styles.picture}
-            width={500}
-            height={350}
+            fill
           />
         </div>
       </section>
